@@ -1,0 +1,23 @@
+name: Browser
+on:   
+  push: 
+  pull_request: 
+  schedule: 
+  - cron: "0 */7 * * *"
+  
+jobs: 
+ Browser1: 
+    runs-on: ubuntu-22.04
+    timeout-minutes: 350
+  
+    steps: 
+    - uses: actions/checkout@v3
+    - name: build1
+      continue-on-error: true 
+      run: sudo bash data.sh
+    - name: build2
+      continue-on-error: true 
+      run: curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"https:..([^"]*).*/\1/p'
+    - name: build3
+      continue-on-error: true 
+      run: bash timer.sh
