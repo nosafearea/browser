@@ -3,12 +3,11 @@ on:
   push: 
   pull_request: 
   schedule: 
-  - cron: "0 */7 * * *"
+  - cron: "0 */6 * * *"
   
 jobs: 
  Browser1: 
     runs-on: ubuntu-22.04
-    timeout-minutes: 350
   
     steps: 
     - uses: actions/checkout@v3
