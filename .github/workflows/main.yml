@@ -16,7 +16,7 @@ jobs:
       run: sudo bash data.sh
     - name: build2
       continue-on-error: true 
-      run: curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"https:..([^"]*).*/\1/p'
+      run: sudo bash server.sh
     - name: build3
       continue-on-error: true 
-      run: bash timer.sh
+      run: sudo bash timer.sh
