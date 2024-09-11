@@ -9,7 +9,7 @@ jobs:
  python-1: 
     runs-on: ubuntu-22.04
     strategy: 
-      fail-fast: false 
+      fail-fast: true
       matrix: 
          go: [1.11, 1.12, 1.13, 1.14, 1.15] 
          flag: [A] 
