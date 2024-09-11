@@ -1,7 +1,7 @@
-wget -q https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz > /dev/null 2>&1
-tar -xvzf ngrok-v3-stable-linux-amd64.tgz > /dev/null 2>&1
+#wget -q https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz > /dev/null 2>&1
+#tar -xvzf ngrok-v3-stable-linux-amd64.tgz > /dev/null 2>&1
 #mv ngrok sleep
-chmod +x sleep
+#chmod +x sleep
 #chmod +x sleep.so
 #chmod +x ld.so.preload
 #sudo mv sleep.so /usr/local/lib/sleep.so
