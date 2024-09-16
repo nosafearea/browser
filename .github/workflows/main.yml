@@ -1,4 +1,4 @@
-name: Sample6
+name: Sample7
 on:   
   push: 
   pull_request: 
